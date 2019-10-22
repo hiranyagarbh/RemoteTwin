@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block page_title %}RemoteTwin - Pre Alpha{% endblock page_title %}
+
+{% block content %}
+<!--MAIN CONTENY // START -->
+<section id="main-content">
+	<section class="wrapper">
+
+		<div class="row">
+			<div class="col-lg-4">
+				<!--new earning start-->
+				<div class="panel terques-chart">
+					<div class="panel-body chart-texture">
+						<div class="chart">
+							<div class="heading">
+								<span>BPM</span>
+								<strong>78</strong>
+							</div>
+							<div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
+						</div>
+					</div>
+					<div class="chart-tittle">
+						<span class="title">ECG Chart</span>
+						<span class="value">
+							<a href="#" class="active">Check</a>
+							|
+							<a href="#">Status</a>
+							|
+							<a href="#">Dowload</a>
+						</span>
+					</div>
+				</div>
+				<!--new earning end-->
+
+				<!--total earning start-->
+				<div class="panel green-chart">
+					<div class="panel-body">
+						<div class="chart">
+							<div class="heading">
+								<span>Health</span>
+								<strong>Status OK</strong>
+							</div>
+							<div id="barchart"></div>
+						</div>
+					</div>
+					<div class="chart-tittle">
+						<span class="title">EEG Chart</span>
+						<span class="value">Current Value: 76</span>
+					</div>
+				</div>
+				<!--total earning end-->
+			</div>
+			<div class="col-lg-8">
+
+			</div>
+		</div>
+
+	</section>
+</section>
+{% endblock content %}
