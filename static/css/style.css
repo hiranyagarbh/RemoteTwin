@@ -52,6 +52,30 @@ textarea {
 	resize: vertical
 }
 
+.plot_container {
+	height: 350px;
+}
+.plot_container > div {
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+}
+.legend {
+		display: block;
+		-webkit-padding-start: 2px;
+		-webkit-padding-end: 2px;
+		border-width: initial;
+		border-style: none;
+		border-color: initial;
+		border-image: initial;
+}
+
+.legendLayer .background {
+    fill: rgba(255, 255, 255, 0.85);
+    stroke: rgba(0, 0, 0, 0.85);
+    stroke-width: 1;
+}
+
 /* == login page ==*/
 
 .login-body {
@@ -372,7 +396,7 @@ ul.sidebar-menu li a.active i {
 
 .white-bg {
 	background: #fff;
-	border-bottom: 1px solid #f1f2f7;
+	border-bottom: 1px solid #e3e3e3;
 }
 
 .wrapper {
@@ -1697,9 +1721,9 @@ ul.ft-link li a i {
 }
 
 .post-highlight.terques {
-	background: #41cac0;
-	border-radius: 4px 0px 0px 04px;
-	-webkit-border-radius: 4px 0px 0px 04px;
+	background: #293462;
+	border-radius: 4px 4px 0px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
 }
 
 .post-info h1 {
@@ -3763,10 +3787,6 @@ table.sliders tr td {
 	float: left;
 }
 
-.step legend {
-	border: none;
-}
-
 .button-back {
 	float: left;
 }
@@ -4467,8 +4487,8 @@ tr.odd.gradeU td.sorting_1 {
 
 /*xchart*/
 
-.demo-xchart {
-	height: 400px;
+.line_xchart {
+	height: 300px;
 	width: 100%;
 }
 

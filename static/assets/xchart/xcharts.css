@@ -74,14 +74,14 @@
   fill: #9dd597;
 }
 .xchart .color2 .line {
-  stroke: #f26522;
+  stroke: #E26E38;
 }
 .xchart .color2 .line .fill {
   pointer-events: none;
 }
 .xchart .color2 rect,
 .xchart .color2 circle {
-  fill: #f26522;
+  fill: #E26E38;
 }
 .xchart .color2 .fill {
   fill: rgba(242, 101, 34, 0.1);
