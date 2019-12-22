@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+	<title>{% block page_title %}{% endblock page_title %}</title>
+	<!-- Bootstrap core CSS -->
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap-reset.css' %}" rel="stylesheet">
+	<!--external css-->
+	<link href="{% static 'assets/font-awesome/css/font-awesome.css' %}" rel="stylesheet" />
+	<!-- Custom styles for this template -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'css/style-responsive.css' %}" rel="stylesheet" />
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="login-body">
+	<div class="container">
+		<!-- new pat form -->
+		<form class="form-signin" action="#" method="POST">
+			{% csrf_token %}
+			<h2 class="form-signin-heading">remotetwin - patient end</h2>
+			<div class="login-wrap">
+
+				<!-- aadhaar card number -->
+				<div class="form-group">
+					<label class="col-md-6 control-label" for="pat_aadhaar_number">Aadhaar Card Number</label>
+					<div class="col-md-6">
+						<input id="pat_aadhaar_number" name="pat_aadhaar_number" type="text" placeholder="9 DIGIT NUMBER" class="form-control input-md" required>
+
+					</div>
+				</div>
+
+				<!-- name input-->
+				<div class="form-group">
+					<label class="col-md-6 control-label" for="pat_name">Full Name</label>
+					<div class="col-md-6">
+						<input id="patient_name" name="patient_name" type="text" placeholder="ENTER HERE" class="form-control input-md" required>
+
+					</div>
+				</div>
+
+				<!-- age input-->
+				<div class="form-group">
+					<label class="col-md-6 control-label" for="pat_age">Age</label>
+					<div class="col-md-4">
+						<input id="pat_age" name="pat_age" type="text" placeholder="ENTER HERE" class="form-control input-md" required>
+					</div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+					<label class="col-md-6 control-label" for="pat_gender">Gender</label>
+					<div class="col-md-6">
+						<select id="pat_gender" name="pat_gender" class="form-control">
+							<option value="Not specified">-SELECT-</option>
+							<option value="Male">MALE</option>
+							<option value="Female">FEMALE</option>
+							<option value="Other">OTHER</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- contact input-->
+				<div class="form-group">
+					<label class="col-md-6 control-label" for="pat_contact">Contact Number</label>
+					<div class="col-md-6">
+						<input id="patient_contact" name="patient_contact" type="text" placeholder="ENTER HERE" class="form-control input-md" required>
+
+					</div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+					<label class="col-md-6 control-label" for="pat_address">Full Address</label>
+					<div class="col-md-6">
+						<textarea class="form-control" id="pat_address" name="pat_address"></textarea>
+					</div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+					<label class="col-md-6 control-label" for="problem_desc">Problem Description</label>
+					<div class="col-md-6">
+						<textarea class="form-control" id="problem_desc" name="problem_desc"></textarea>
+					</div>
+				</div>
+				<button class="btn btn-lg btn-login btn-block" type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

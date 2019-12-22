@@ -55,62 +55,59 @@ textarea {
 .plot_container {
 	height: 350px;
 }
+
 .plot_container > div {
 	height: 100%;
 	width: 100%;
 	font-size: 14px;
 }
+
 .legend {
-		display: block;
-		-webkit-padding-start: 2px;
-		-webkit-padding-end: 2px;
-		border-width: initial;
-		border-style: none;
-		border-color: initial;
-		border-image: initial;
+	display: block;
+	-webkit-padding-start: 2px;
+	-webkit-padding-end: 2px;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
 }
 
 .legendLayer .background {
-    fill: rgba(255, 255, 255, 0.85);
-    stroke: rgba(0, 0, 0, 0.85);
-    stroke-width: 1;
+	fill: rgba(255, 255, 255, 0.85);
+	stroke: rgba(0, 0, 0, 0.85);
+	stroke-width: 1;
 }
 
 /* == login page ==*/
 
 .login-body {
-	background-color: #f1f2f7;
+	background-color: #ededed;
 }
 
 .form-signin {
-	max-width: 330px;
-	margin: 100px auto 0;
+	max-width: 550px;
+	margin: 70px auto;
 	background: #fff;
+
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
+
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .form-signin h2.form-signin-heading {
 	margin: 0;
 	padding: 20px 15px;
 	text-align: center;
-	background: #41cac0;
+	background: #16bfb3;
+
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
+
 	color: #fff;
 	font-size: 18px;
 	text-transform: uppercase;
-	font-weight: 300;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.form-signin .checkbox {
-	margin-bottom: 14px;
-}
-
-.form-signin .checkbox {
-	font-weight: normal;
-	color: #b6b6b6;
 	font-weight: 300;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -119,7 +116,7 @@ textarea {
 	position: relative;
 	font-size: 16px;
 	height: auto;
-	padding: 10px;
+	padding: 7px 10px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -129,24 +126,35 @@ textarea {
 	z-index: 2;
 }
 
+.form-group label {
+	margin: 10px 0;
+}
+
 .form-signin input[type="text"],
-.form-signin input[type="password"] {
-	margin-bottom: 15px;
+.form-signin input[type="password"],
+.form-group textarea {
+	margin: 10px 0;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border: 1px solid #eaeaea;
+	border: 1px solid #cecece;
 	box-shadow: none;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .form-signin .btn-login {
-	background: #f67a6e;
+	background: #16bfb3;
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 600;
 	font-family: 'Open Sans', sans-serif;
-	box-shadow: 0 4px #e56b60;
-	margin-bottom: 20px;
+	box-shadow: 0 4px #0b9188;
+	margin: auto;
+	padding: 8px 25px;
+	width: 30%;
+}
+
+.form-signin .btn-login:active {
+	box-shadow: 0 2px #0b9188;
 }
 
 .form-signin p {
@@ -161,7 +169,7 @@ textarea {
 }
 
 .form-signin a:hover {
-	color: #b6b6b6;
+	text-decoration: underline;
 }
 
 .login-wrap {

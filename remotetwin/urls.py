@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from dashboard.views import dashboard_view, pat_history_view, appt_online_view, appt_physical_view
+from patientend.views import patientend_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +24,6 @@ urlpatterns = [
     path('patient_history/', pat_history_view, name='patient_history'),
     path('appointment_online/', appt_online_view, name='appointment_online'),
     path('appointment_physical/', appt_physical_view, name='appointment_physical'),
+	# patient end
+	path('patientend/', patientend_view, name='patientend'),
 ]
